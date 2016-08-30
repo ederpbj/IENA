@@ -5,5 +5,10 @@
       <auth-required>false</auth-required>
       <first-sync>true</first-sync>
     </data-source>
+    <data-source name="Sqlite (Xerial) - development.sqlite3" uuid="ca43de9a-5f9b-4891-b834-4a8ff24bf5d2">
+      <secret-storage>master_key</secret-storage>
+      <auth-required>false</auth-required>
+      <first-sync>true</first-sync>
+    </data-source>
   </component>
 </project>

@@ -1,20 +1,22 @@
 class SessionsController < ApplicationController
   def new
+    @user = User.new
   end
 
   def create
-    user = User.exists?(params[:name])
+    user = User.find_by(name: params[:name])
+    @byebug
 
-    if user && user.authenticate(params[:password])
-      session[:user_id] = user.id
+    if user && user.authenticate(params['password'])
+      session[:id_user] = user.id
       redirect_to users_path
     else
-      redirect_to '/login'
+      redirect_to '/login', notice: "Senha ou login inválido"
     end
   end
 
   def destroy
-    session[:user_id] = nil
+    session[:id_user] = nil
     redirect_to '/login'
   end
 end
