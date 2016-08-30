@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id frequencia:</strong>
+  <%= @ponto.id_frequencia %>
+</p>
+
+<p>
+  <strong>Celula:</strong>
+  <%= @ponto.celula %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @ponto.data %>
+</p>
+
+<p>
+  <strong>Membro:</strong>
+  <%= @ponto.membro %>
+</p>
+
+<%= link_to 'Edit', edit_ponto_path(@ponto) %> |
+<%= link_to 'Back', pontos_path %>

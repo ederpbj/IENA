@@ -1,0 +1,52 @@
+<%= form_for(atividade) do |f| %>
+  <% if atividade.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(atividade.errors.count, "error") %> prohibited this atividade from being saved:</h2>
+
+      <ul>
+      <% atividade.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id_atividade %>
+    <%= f.text_field :id_atividade %>
+  </div>
+
+  <div class="field">
+    <%= f.label :encontro %>
+    <%= f.check_box :encontro %>
+  </div>
+
+  <div class="field">
+    <%= f.label :batismo %>
+    <%= f.check_box :batismo %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ccc %>
+    <%= f.check_box :ccc %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ctl %>
+    <%= f.check_box :ctl %>
+  </div>
+
+  <div class="field">
+    <%= f.label :casado_a %>
+    <%= f.check_box :casado_a %>
+  </div>
+
+  <div class="field">
+    <%= f.label :dizimista %>
+    <%= f.check_box :dizimista %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

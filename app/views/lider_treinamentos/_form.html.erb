@@ -1,0 +1,32 @@
+<%= form_for(lider_treinamento) do |f| %>
+  <% if lider_treinamento.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(lider_treinamento.errors.count, "error") %> prohibited this lider_treinamento from being saved:</h2>
+
+      <ul>
+      <% lider_treinamento.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id_lider_treinamento %>
+    <%= f.text_field :id_lider_treinamento %>
+  </div>
+
+  <div class="field">
+    <%= f.label :member_id %>
+    <%= f.text_field :member_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :celula_id %>
+    <%= f.text_field :celula_id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

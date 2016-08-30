@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_frequencia: 1
+  celula: one
+  data: 
+  membro: one
+
+two:
+  id_frequencia: 1
+  celula: two
+  data: 
+  membro: two

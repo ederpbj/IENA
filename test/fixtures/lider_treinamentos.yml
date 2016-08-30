@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_lider_treinamento: 
+  member: one
+  celula: one
+
+two:
+  id_lider_treinamento: 
+  member: two
+  celula: two

@@ -1,0 +1,37 @@
+<%= form_for(ponto) do |f| %>
+  <% if ponto.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(ponto.errors.count, "error") %> prohibited this ponto from being saved:</h2>
+
+      <ul>
+      <% ponto.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id_frequencia %>
+    <%= f.number_field :id_frequencia %>
+  </div>
+
+  <div class="field">
+    <%= f.label :celula_id %>
+    <%= f.text_field :celula_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :data %>
+    <%= f.text_field :data %>
+  </div>
+
+  <div class="field">
+    <%= f.label :membro_id %>
+    <%= f.text_field :membro_id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

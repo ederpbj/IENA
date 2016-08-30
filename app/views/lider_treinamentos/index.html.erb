@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Lider Treinamentos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id lider treinamento</th>
+      <th>Member</th>
+      <th>Celula</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lider_treinamentos.each do |lider_treinamento| %>
+      <tr>
+        <td><%= lider_treinamento.id_lider_treinamento %></td>
+        <td><%= lider_treinamento.member %></td>
+        <td><%= lider_treinamento.celula %></td>
+        <td><%= link_to 'Show', lider_treinamento %></td>
+        <td><%= link_to 'Edit', edit_lider_treinamento_path(lider_treinamento) %></td>
+        <td><%= link_to 'Destroy', lider_treinamento, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Lider Treinamento', new_lider_treinamento_path %>

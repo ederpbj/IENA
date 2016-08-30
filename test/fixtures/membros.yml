@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_membro: 
+  nome: MyString
+  data_aniversario: 
+  tipo: one
+  endereco: MyString
+  cep: MyString
+  telefone: MyString
+
+two:
+  id_membro: 
+  nome: MyString
+  data_aniversario: 
+  tipo: two
+  endereco: MyString
+  cep: MyString
+  telefone: MyString

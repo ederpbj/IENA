@@ -1,0 +1,52 @@
+<%= form_for(membro) do |f| %>
+  <% if membro.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(membro.errors.count, "error") %> prohibited this membro from being saved:</h2>
+
+      <ul>
+      <% membro.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id_membro %>
+    <%= f.text_field :id_membro %>
+  </div>
+
+  <div class="field">
+    <%= f.label :nome %>
+    <%= f.text_field :nome %>
+  </div>
+
+  <div class="field">
+    <%= f.label :data_aniversario %>
+    <%= f.text_field :data_aniversario %>
+  </div>
+
+  <div class="field">
+    <%= f.label :tipo_id %>
+    <%= f.text_field :tipo_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :endereco %>
+    <%= f.text_field :endereco %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cep %>
+    <%= f.text_field :cep %>
+  </div>
+
+  <div class="field">
+    <%= f.label :telefone %>
+    <%= f.text_field :telefone %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
