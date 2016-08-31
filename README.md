@@ -17,18 +17,29 @@ __requisitos__
 - gem 'turbolinks', '~> 5'
 - gem 'jbuilder', '~> 2.5'
 - gem 'bcrypt', '~> 3.1.7'
+- bootstrap 
+- jquery
+
+# instalação
+```
+bundle install
+```
 
 # Sobre Projeto
 
 __Alunos:__
 - Éder Pires Batista, matricula: 20112370238
-- Joeverson Santos, matrícula: 20
+- Joeverson Santos, matrícula: 20132370420
 
 
 __Funcionalidades:__
 - Fazer login
 - Criar cadastro
 - adicionar membro
-- Adicionar tipo
+- Adicionar tipo membro
 - Fazer logout
 - adicionar frequência
+
+__Apresentação__
+- Slide
+- http://slides.com/joeversonsantos/deck-5#/0/1
