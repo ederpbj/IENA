@@ -2,10 +2,9 @@
 
 <h1>Celulas</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
-      <th>Id celula</th>
       <th>Nome</th>
       <th>Data iniciada</th>
       <th>Endereco</th>
@@ -20,7 +19,6 @@
   <tbody>
     <% @celulas.each do |celula| %>
       <tr>
-        <td><%= celula.id_celula %></td>
         <td><%= celula.nome %></td>
         <td><%= celula.data_iniciada %></td>
         <td><%= celula.endereco %></td>
@@ -38,4 +36,4 @@
 
 <br>
 
-<%= link_to 'New Celula', new_celula_path %>
+<%= link_to 'New Celula', new_celula_path, class: "btn btn-primary" %>

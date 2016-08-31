@@ -12,46 +12,41 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :id_celula %>
-    <%= f.text_field :id_celula %>
-  </div>
-
-  <div class="field">
     <%= f.label :nome %>
-    <%= f.text_field :nome %>
+    <%= f.text_field :nome , class: "form-control"%>
   </div>
 
   <div class="field">
     <%= f.label :data_iniciada %>
-    <%= f.text_field :data_iniciada %>
+    <%= f.text_field :data_iniciada , class: "form-control"%>
   </div>
 
   <div class="field">
     <%= f.label :endereco %>
-    <%= f.text_field :endereco %>
+    <%= f.text_field :endereco , class: "form-control"%>
   </div>
 
   <div class="field">
     <%= f.label :anfitriao_id %>
-    <%= f.text_field :anfitriao_id %>
+    <%= f.text_field :anfitriao_id , class: "form-control"%>
   </div>
 
   <div class="field">
     <%= f.label :membro_id %>
-    <%= f.text_field :membro_id %>
+    <%= select("membro", "membro_id", Membro.all.collect {|p| [ p.nome, p.id ] }, { include_blank: true }, class: "form-control")%>
   </div>
 
   <div class="field">
     <%= f.label :dia %>
-    <%= f.text_field :dia %>
+    <%= f.text_field :dia , class: "form-control"%>
   </div>
 
   <div class="field">
     <%= f.label :cep %>
-    <%= f.text_field :cep %>
+    <%= f.text_field :cep , class: "form-control"%>
   </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit class: "btn btn-primary"%>
   </div>
 <% end %>

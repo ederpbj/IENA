@@ -32,7 +32,7 @@
 
         <!--logo and iconic logo start-->
         <div class="logo">
-          <h1><a href="index.html">Easy <span>Admin</span></a></h1>
+          <h1><a href="#">IENA</a></h1>
         </div>
         <div class="logo-icon text-center">
           <a href="index.html"><i class="lnr lnr-home"></i> </a>
@@ -51,7 +51,12 @@
                 <li><a href="<%=new_celula_path%>">Adicionar</a> </li>
               </ul>
             </li>
-            <li><a href="<%=lider_treinamentos_path%>"><i class="fa fa-blind" aria-hidden="true"></i>    <span>Lider Treinamento</span></a></li>
+
+            <li><a href="<%=lider_treinamentos_path%>"><i class="fa fa-book" aria-hidden="true"></i>    <span>Lider Treinamento</span></a></li>
+            <li><a href="<%=membros_path%>"><i class="fa fa-circle" aria-hidden="true"></i>    <span>Membro</span></a></li>
+            <li><a href="<%=pontos_path%>"><i class="fa fa-paste" aria-hidden="true"></i>    <span>Frequência</span></a></li>
+            <li><a href="<%=tipos_path%>"><i class="fa fa-gg" aria-hidden="true"></i>    <span>Tipos</span></a></li>
+
 
           </ul>
           <!--sidebar nav end-->
@@ -294,4 +299,3 @@
     <%= yield %>
 
     <% end %>
-
