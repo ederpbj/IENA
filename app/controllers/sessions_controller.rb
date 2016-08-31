@@ -4,10 +4,9 @@ class SessionsController < ApplicationController
   end
 
   def create
-    user = User.find_by(name: params[:'/login'][:nome])
+    user = User.find_by(name: params[:'/login'][:name])
 
-
-    if user && user.authenticate(params['password'])
+    if user && user.authenticate(params[:'/login'][:password])
       session[:id_user] = user.id
       redirect_to membros_path
     else

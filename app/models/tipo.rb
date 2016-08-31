@@ -1,4 +1,3 @@
-class Tipo < ApplicationRecord
-  belongs_to :membro
+class Tipo < ApplicationRecord  
   validates :nome, presence: true
 end

@@ -33,7 +33,7 @@ class UsersController < ApplicationController
       if @user.save
         format.html {
           session[:user_id] = @user.id
-          redirect_to @user, notice: 'User was successfully created.'
+          redirect_to :"\login", notice: 'User was successfully created.'
         }
         format.json { render :show, status: :created, location: @user }
       else
