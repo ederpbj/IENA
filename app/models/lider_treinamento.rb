@@ -1,4 +1,4 @@
 class LiderTreinamento < ApplicationRecord
-  belongs_to :membro
-  belongs_to :celula
+  has_one :membro
+  has_one :celula
 end

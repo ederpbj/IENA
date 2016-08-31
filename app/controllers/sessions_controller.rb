@@ -4,11 +4,12 @@ class SessionsController < ApplicationController
   end
 
   def create
-    user = User.find_by(name: params[:name])
+    user = User.find_by(name: params[:'/login'][:nome])
+
 
     if user && user.authenticate(params['password'])
       session[:id_user] = user.id
-      redirect_to users_path
+      redirect_to membros_path
     else
       redirect_to '/login', notice: "Senha ou login inválido"
     end

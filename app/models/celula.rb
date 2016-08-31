@@ -1,4 +1,4 @@
 class Celula < ApplicationRecord
-  belongs_to :anfitriao
-  belongs_to :membro
+  has_many :membro
+  belongs_to :lider_treinamento
 end

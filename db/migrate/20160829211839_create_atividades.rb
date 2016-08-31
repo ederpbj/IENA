@@ -8,6 +8,7 @@ class CreateAtividades < ActiveRecord::Migration[5.0]
       t.boolean :ctl
       t.boolean :casado_a
       t.boolean :dizimista
+      t.references :membro
 
       t.timestamps
     end

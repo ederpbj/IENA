@@ -1,4 +1,4 @@
 class Ponto < ApplicationRecord
-  belongs_to :celula
-  belongs_to :membro
+  has_one :celula
+  has_one :membro  
 end

@@ -20,8 +20,10 @@ ActiveRecord::Schema.define(version: 20160829224609) do
     t.boolean  "ctl"
     t.boolean  "casado_a"
     t.boolean  "dizimista"
+    t.integer  "membro_id"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
+    t.index ["membro_id"], name: "index_atividades_on_membro_id"
   end
 
   create_table "celulas", force: :cascade do |t|
